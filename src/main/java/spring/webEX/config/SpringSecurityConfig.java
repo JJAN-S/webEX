@@ -40,6 +40,7 @@ public class SpringSecurityConfig {
                 .logout()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
                 .logoutSuccessUrl("/")
+
                 .invalidateHttpSession(true)
         ;
 
